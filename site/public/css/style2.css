@@ -14,7 +14,7 @@
 body{
 width:100%;
 overflow:hidden;
-background:hsla(0,0%,0%,1);
+/* background:hsla(0,0%,0%,1); */
 font-family: Montserrat, sans-serif;
 color: white;
 }
@@ -255,4 +255,40 @@ li:hover {
   .btn3{
     padding: 5px 2px;
   }
+}
+
+.tabContainer{
+  width: 100%;
+  height: 1000px;
+}
+.tabContainer .buttonContainer{
+  height: 10%;
+  margin-top: 30%;
+}
+.tabContainer .buttonContainer button{
+  width:25%;
+  height:100%;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px;
+  font-family: Montserrat;
+  font-size: 30px;
+  background-color: gray;
+}
+.tabContainer .buttonContainer button:hover{
+  background-color: white;
+  transition: 1s ease;
+}
+.tabContainer .tabPanel{
+  height: 85%;
+  background-color: gray;
+  color: White;
+  text-align: center;
+  padding-top: 105px;
+  box-sizing: border-box;
+  font-family: Montserrat;
+  font-size: 22px;
+  display: none;
 }
