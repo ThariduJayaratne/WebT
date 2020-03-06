@@ -22,7 +22,7 @@ color: white;
 .background-wrap {
 		position: fixed;
 		z-index: -1000;
-	 width: 100%;
+	  width: 100%;
 		height: 100%;
 		overflow: hidden;
 		top: 0;
@@ -80,9 +80,8 @@ text-shadow:
   text-align: center;
   font-weight: 600;
   color: #fff;
-  padding-top: 16%;
-  padding-bottom: 4%;
-  /* margin-bottom: 30px; */
+  margin-top: 20%;
+  margin-bottom: 30px;
   animation: text 1.6s 1;
   display: block;
   position: relative;
@@ -119,6 +118,7 @@ text-shadow:
   font-weight: 600;
   letter-spacing: 3px;
   color: #fff;
+  margin-bottom: 50px;
   text-shadow:
     /* Outline */
     -1px -1px 0 #000,
@@ -139,18 +139,19 @@ text-shadow:
   color: white;
   text-align: center;
 }
-.button{
+
+.content button{
   position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%,-50%);
+  top: 70% !important;
+  width: 100%;
+  align: center;
   font-weight: 600;
 }
 .btn{
   border: 3px solid #000;
-  padding: 10px 80px;
+  padding: 10px 30px;
   color: white;
-  font-size: 25px;
+  font-size: 2em;
   text-decoration: none;
   transition: 1s ease;
   text-shadow:
@@ -167,7 +168,7 @@ text-shadow:
 }
 .btn3{
   border: 3px solid #000;
-  padding: 10px 30px;
+  /* padding: 10px 30px 15px 25px; */
   color: #fff !important;
   font-size: 25px;
   text-decoration: none;
@@ -244,15 +245,57 @@ li:hover {
   .btn{
     padding: 5px 10px;
   }
-  .btn3{
-    padding: 5px 5px;
+
+}
+@media screen and (max-width:992px){
+  .btn{
+    padding: 5px 10px;
   }
 }
 @media screen and (max-width:768px){
   .btn{
     padding: 5px 5px;
+    font-size: 1.25em;
+    /* margin: auto; */
   }
-  .btn3{
-    padding: 5px 2px;
+  .content h1 {
+    font-size: 6em;
+    text-align: center;
+    padding-top: 50%;
+    padding-bottom: 4%;
+  }
+  .content p {
+    text-align: center;
+    font-size: 1.75em;
+  }
+  li{
+    list-style: none;
+    margin: 10px 20px;
+    display: inline-block;
+    font-size: 2em;
+    padding: 5px 5px;
+  }
+}
+@media screen and (max-width:375px){
+  .btn{
+    padding: 10px 20px;
+    font-size: 0.65em;
+  }
+  .content h1 {
+    font-size: 6em;
+    text-align: center;
+    padding-top: 50%;
+    padding-bottom: 4%;
+  }
+  .content p {
+    text-align: center;
+    font-size: 1.75em;
+  }
+  li{
+    list-style: none;
+    margin: 10px 2px;
+    display: inline-block;
+    font-size: 2em;
+    padding: 5px 5px;
   }
 }
