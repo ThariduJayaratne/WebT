@@ -1,0 +1,329 @@
+@import 'https://fonts.googleapis.com/css?family=Montserrat';
+#loading{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: #FFE11D url('https://media3.giphy.com/media/ZYL86UZ7MjeIPDZ4xp/giphy.gif')no-repeat center;
+  z-index: 99999;
+}
+
+@font-face {
+  font-family: moon;
+  src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/707108/moon.ttf);
+}
+/*
+.menu-images {
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr;
+  grid-gap: 1em;
+  flex: 1;
+}
+
+.menu-images img {
+  width: 100%;
+}
+
+.menu div:last-child {
+  flex: 1;
+} */
+
+/*Add the following compatibility code for IE as you can't animate background-size in IE*/
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active){
+	.textOverImage{background-size:cover!important;}
+}
+.textOverImage{
+    position:relative;
+    width:324px;
+    height:400px;
+    float:left;
+    margin:4px;
+    /* background-size:100%; */
+    transition:0.5s;
+    overflow:hidden;
+    border-radius:4px;
+    box-shadow:0 0 4px #000;
+    left: 1%;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .textOverImage:hover{
+    background-size:260%;
+    background-repeat: no-repeat;
+  }
+
+.textOverImage:before{
+  position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+  transform:translateY(90%);/*use transform:translateY(100%); to remove footer*/
+    background-color:rgba(0,0,0,0.3);
+    color:#fff;
+    padding:0 8px;
+    content:attr(data-title);
+    transition:0.5s 0.1s;
+    color:#fff;
+    font-weight:bold;
+    font-size:1.5em;
+}
+
+  .textOverImage:after{
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    color:#fff;
+    padding:8px;
+    content:attr(data-text);
+    transition:0.5s;
+    padding-top:2em;
+    margin-top:8px;
+    transform:translateY(100%);
+    opacity:0;
+  }
+
+  .textOverImage:hover:after{
+    transform:translateY(0);
+    transition:0.5s 0.1s;
+    opacity:1;
+  }
+
+.textOverImage:hover:before{
+    transform:translateY(0);
+    padding:8px;
+    background-color:rgba(0,0,0,0.6);
+    transition:0.5s;
+}
+
+.logo {
+  animation: logo 2s 0s ease ;
+  -moz-animation: logo 2s 0s ease ;
+  /* Firefox */
+  -webkit-animation: logo 2s 0s ease ;
+  /* Safari and Chrome */
+  -o-animation: logo 2s 0s ease  ;
+  text-shadow:
+  -.1vw 0vw .1vw #FED128, -.15vw 0vw .2vw #FED128, -.2vw 0vw .2vw #FED128,
+  -.1vw 0vw 3vw #F0130B, -.2vw 0vw 3vw #F0130B, -.4vw 0vw 3vw #F0130B,
+  -.1vw 0vw 5vw #F0130B, -.2vw 0vw 5vw #F0130B, -.4vw 0vw .8vw #F0130B, .2vw 0vw 10vw #F0130B;
+    color: #FED128;
+  /* Opera */
+}
+
+@keyframes logo {
+
+  0%{
+    letter-spacing: 8px;
+    margin-bottom: -40px;
+  }
+  100% {
+  text-shadow:
+  -.1vw 0vw .1vw #FED128, -.15vw 0vw .2vw #FED128, -.2vw 0vw .2vw #FED128,
+  -.1vw 0vw 3vw #F0130B, -.2vw 0vw 3vw #F0130B, -.4vw 0vw 3vw #F0130B,
+  -.1vw 0vw 5vw #F0130B, -.2vw 0vw 5vw #F0130B, -.4vw 0vw .8vw #F0130B, .2vw 0vw 10vw #F0130B;
+    color: #FED128;
+  }
+  50% {
+  text-shadow:
+  -.1vw 0vw .1vw #705C12, -.15vw 0vw .2vw #705C12, -.2vw 0vw .2vw #705C12,
+  -.1vw 0vw .1vw #5C0704, -.2vw 0vw .1vw #5C0704, -.4vw 0vw .1vw #5C0704,
+  -.1vw 0vw .2vw #5C0704, -.2vw 0vw .2vw #5C0704, -.4vw 0vw .2vw #5C0704, .2vw 0vw .5vw #5C0704;
+    color: #705C12;
+    letter-spacing: 25px;
+    margin-bottom: -5px;
+  }
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+font-family: moon, sans-serif;
+color: white;
+}
+
+.sec1{
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.sec2{
+  height: auto;
+  box-sizing: border-box;
+}
+
+.background-wrap {
+		position: absolute;
+		z-index: -1000;
+	  width: 100%;
+		height: 100%;
+		overflow: hidden;
+	}
+
+#video-bg-elem {
+		position: absolute;
+		top: 0;
+		left: 0;
+		min-height: 100%;
+		min-width: 100%;
+	}
+
+a:link {
+color: #000;
+}
+
+a:hover {
+color: #000;
+}
+
+a:visited {
+color: #000;
+}
+
+.logo {
+    position: absolute;
+    top: 20%;
+    width: 100%;
+    text-align: center;
+    font-family: moon;
+    font-size: 8em;
+ }
+
+p {
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  text-align: center;
+  font-size: 2em;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  color: rgb(255,255,255);
+  text-shadow:
+    /* Outline */
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000,
+    -2px 0 0 #000,
+    2px 0 0 #000,
+    0 2px 0 #000,
+    0 -2px 0 #000;
+}
+
+.wrapper {
+	position: absolute;
+  top: 88%;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+.footer {
+  position: absolute;
+  width: 100%;
+  top: 95%;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.button{
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+}
+
+.btn{
+  border: 3px solid #000;
+  padding: 10px 30px;
+  color: white;
+  font-size: 2em;
+  text-decoration: none;
+  transition: 1s ease;
+  text-shadow:
+    /* Outline */
+    -1px -1px 0 #fff,
+    1px -1px 0 #fff,
+    -1px 1px 0 #fff,
+    1px 1px 0 #fff,
+    -2px 0 0 #fff,
+    2px 0 0 #fff,
+    0 2px 0 #fff,
+    0 -2px 0 #fff;
+    background-color: white;
+}
+
+.btn:hover{
+  background-color: #000;
+  color: #fff;
+  text-shadow:
+    /* Outline */
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000,
+    -2px 0 0 #000,
+    2px 0 0 #000,
+    0 2px 0 #000,
+    0 -2px 0 #000;
+  text-decoration: none;
+  cursor:pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+li{
+  list-style: none;
+  margin: 10px 19px  !important;
+  display: inline-block;
+  font-size: 1.5em !important;
+  padding: 20px 5px;
+  color: black;
+  text-decoration: none;
+  transition: .5s;
+  text-shadow:
+    -1px -1px 0 #fff,
+    1px -1px 0 #fff,
+    -1px 1px 0 #fff,
+    1px 1px 0 #fff,
+    -2px 0 0 #fff,
+    2px 0 0 #fff,
+    0 2px 0 #fff,
+    0 -2px 0 #fff;
+    padding: 5px 5px !important ;
+
+}
+
+li:hover {
+  cursor:pointer;
+  transform: scale(1.5,1.5);
+  transition: .4s;
+}
+
+@media screen and (max-width:650px){
+  .btn{
+    font-size: 1.2em;
+    padding: 2px 6px;
+  }
+
+  .logo{
+    top: 30%;
+    font-size: 5em;
+  }
+
+  p{
+    top: 42%;
+    font-size: 1.2em;
+  }
+
+  .footer{
+    font-size: 1em;
+  }
+}
