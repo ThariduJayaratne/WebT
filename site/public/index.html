@@ -7,7 +7,7 @@
   <link rel="stylesheet" type="text/css" href="css/style.css"/>
   <link media="all" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
 </head>
-<body>
+<body onload="myFunction()">
   <header>
     <div class="background-wrap">
   		<video id="video-bg-elem" preload="auto" autoplay="true" loop="loop" muted="muted">
@@ -21,8 +21,8 @@
       <p>Come for the tapas, stay for the mains.</p>
       <div class="button">
         <a href= "menu.html" class="btn"> <i class="fa fa-cutlery"/> Menu</a>
-        <a href= "booking.html" class="btn"> <i class = "fa fa-cubes"/> Book</a>
-        <a href= "https://karthiksridhar.me/about.html" class="btn"> <i class = "fa fa-user"/> About Us</a>
+        <a href= "#" class="btn"> <i class = "fa fa-cubes"/> Book</a>
+        <a href= "about.html" class="btn"> <i class = "fa fa-user"/> About Us</a>
       </div>
     </div>
     <div class="bottom">
@@ -37,8 +37,15 @@
   <section>
     <a href="menu.html" class="box" style="background-image:url(https://www.washingtonian.com/wp-content/uploads/2019/12/DC-4th-of-July-Brunch-Photo.jpg);">Loco Fridays</a>
     <a href="menu.html" class="box" style="background-image:url(https://www.retailmenot.com/blog/wp-content/uploads/sites/2/2018/08/Happy-Hour-Cheers-1-765x453.jpg);">Happy Hour</a>
-    <a href="menu.html" class="box" style="background-image:url(images/our_restaurants.jpg);">Our Restaurants</a>
-    <a href="menu.html" class="box" style="background-image:url(images/Careers.jpg);">Careers</a>
+    <a href="locations.html" class="box" style="background-image:url(images/our_restaurants.jpg);">Our Restaurants</a>
+    <a href="#" class="box" style="background-image:url(images/Careers.jpg);">Careers</a>
   </section>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script>
+    var preloader = document.getElementById('loading');
+    function myFunction(){
+      preloader.style.display = 'none';
+    }
+  </script>
 </body>
 </html>

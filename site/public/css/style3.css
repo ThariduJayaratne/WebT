@@ -1,0 +1,107 @@
+@import 'https://fonts.googleapis.com/css?family=Montserrat';
+#loading{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: #FFE11D url('https://media3.giphy.com/media/ZYL86UZ7MjeIPDZ4xp/giphy.gif')no-repeat center;
+  z-index: 99999;
+}
+@font-face {
+  font-family: moon;
+  src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/707108/moon.ttf);
+}
+
+
+body,html {
+  height:100%;
+  margin: 0;
+  colorL #fff;
+  font-family: 'Montserrat';
+}
+
+nav #logo {
+  font-family: moon, sans-serif;
+  font-size: 3em;
+  /* padding-top: 10%; */
+  color: #FED128;
+  text-shadow:
+  -.1vw 0vw .1vw #FED128, -.15vw 0vw .2vw #FED128, -.2vw 0vw .2vw #FED128,
+  -.1vw 0vw 3vw #F0130B, -.2vw 0vw 3vw #F0130B, -.4vw 0vw 3vw #F0130B,
+  -.1vw 0vw 5vw #F0130B, -.2vw 0vw 5vw #F0130B, -.4vw 0vw .8vw #F0130B, .2vw 0vw 10vw #F0130B;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+body{
+  background: url('../images/bg.png') no-repeat;
+  background-size: cover;
+  padding-bottom: 500px;
+}
+
+ /* #left {
+  position: absolute;
+  top: 60%;
+} */
+ /* #right {
+  postion : absolute;
+  top: 20%;
+  right: 0;
+  z-index: 1;
+  opacity: 0.3;
+} */
+
+nav {
+  padding: 50px;
+}
+
+nav ul {
+  list-style-type: none;
+  float: right;
+}
+nav ul li {
+  float: left;
+}
+nav ul li a {
+  color: #000;
+  padding: 0 30px;
+  font-size: 2em;
+}
+
+#logo {
+  font-size: 3em;
+}
+
+.container{
+  text-align: center;
+  width: 60%;
+  margin: 110px auto;
+}
+
+h1 {
+  font-size: 3.5em;
+  color: #fff;
+  text-shadow:
+    /* Outline */
+    -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    1px 1px 0 black,
+    -2px 0 0 black,
+    2px 0 0 black,
+    0 2px 0 black,
+    0 -2px 0 black;
+}
+
+.container p {
+  font-size: 1.3em;
+  line-height: 1.4em;
+}
+a:hover {
+  background: black;
+  color: white;
+  transition: 1s ease;
+  border-radius: 10px;
+  border: 3px solid black;
+}

@@ -3,25 +3,597 @@
 <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
 <title>T&amp;J Tapas</title>
 <link rel="stylesheet" type="text/css" href="css/style2.css"/>
+<link rel="stylesheet" type="text/css" href="css/menu.css"/>
 <link media="all" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
-<body>
-  <div class = "content">
-    <h1>Menu</h1>
-  </div>
+<body onload="myFunction()">
+  <!-- <h1 style="background-image:url(images/menu.jpg);">Menu</h1> -->
   <!-- <h1>Menu</h1> -->
+  <nav>
+    <!-- <a href="menu.html" id="logo"> -->
+      <h7>Menu</h7>
+    <!-- </a> -->
+      <ul>
+      <li><a href = "index.html">Home</a></li>
+      <li><a href = "about.html">About</a></li>
+      <li><a href = "#">Careers</a></li>
+      </ul>
+    </nav>
   <div class="tabContainer">
     <div class="buttonContainer">
-      <button onclick = "showPanel(0, '#f44336')">Tapas</button>
-      <button onclick = "showPanel(1, '#4caf50')">Mains</button>
+      <button onclick = "showPanel(0, '#f44336')">Mains</button>
+      <button onclick = "showPanel(1, '#4caf50')">Tapas</button>
       <button onclick = "showPanel(2, '#2196f3')">Drinks</button>
       <button onclick = "showPanel(3, '#ff5722')">Desserts</button>
     </div>
-    <div class="tabPanel">whatever</div>
-    <div class="tabPanel">whatever</div>
-    <div class="tabPanel">whatever</div>
-    <div class="tabPanel">whatever</div>
+    <div class="tabPanel">
+      <div class="flex-container">
+  <section class="flex-container">
+    <div class="card">
+      <div class="wrapper flex-container" id="hd1" style="background-image:url(https://lh5.googleusercontent.com/proxy/bLtjkgUmgYtiiniy0xQMwly4pKcrri0t-y9jLwUBw9oyX8A0zWODPdCWDP-nh74eMKu_ylc8cBXUDpK4DbG56ER-A1e2YIary_gvsivlWEPOzgY);">
+        <div class="data flex-container">
+          <div class="content flex-container">
+            <div class="content-header flex-container">
+              <span class="price">$7.00</span>
+            </div>
+            <h2 class="title">Paella Valenciana</h2>
+            <p class="discription">Smoky, juicy and delicious. So good we flew it all the way from Alaska!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="wrapper flex-container" id="hd2" style="background-image:url(https://images.summitmedia-digital.com/yummyph/images/2017/07/26/spanish-pisto.jpg);">
+        <div class="data flex-container">
+          <div class="content flex-container">
+            <div class="content-header flex-container">
+              <span class="price">$6.50</span>
+            </div>
+            <h2 class="title">Pisto</h2>
+            <p class="discription">Apricots and cranberries make this a smoky treat</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="wrapper flex-container" id="hd3" style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/7/77/Fabada_en_cazuela_de_barro.jpg); background-size:cover;">
+        <div class="data flex-container">
+          <div class="content flex-container">
+            <div class="content-header flex-container">
+              <span class="price">$6.50</span>
+            </div>
+            <h2 class="title">Fabada Asturiana</h2>
+            <p class="discription">Very traditional, very German, very good.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="wrapper flex-container" id="hd4" style="background-image:url(https://www.lottieanddoof.com/wp-content/uploads/2010/09/IMG_5699.jpg);">
+        <div class="data flex-container">
+          <div class="content flex-container">
+            <div class="content-header flex-container">
+              <span class="price">$7.00</span>
+            </div>
+            <h2 class="title">Gazpacho</h2>
+            <p class="discription">Smoky, juicy and delicious. So good we flew it all the way from Alaska!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="wrapper flex-container" id="hd5" style="background-image:url(https://www.be-hamon.com/wp-content/uploads/2018/12/jamon.jpg); background-size:cover;">
+        <div class="data flex-container">
+          <div class="content flex-container">
+            <div class="content-header flex-container">
+              <span class="price">$6.50</span>
+            </div>
+            <h2 class="title">Jamón</h2>
+            <p class="discription">Apricots and cranberries make this a smoky treat</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="wrapper flex-container" id="hd6" style="background-image:url(https://www.shbarcelona.com/blog/en/wp-content/uploads/2016/09/Fideua-close-up-810x540.jpg);  background-position: center;">
+        <div class="data flex-container">
+          <div class="content flex-container">
+            <div class="content-header flex-container">
+              <span class="price">$6.50</span>
+            </div>
+            <h2 class="title">Fideuà</h2>
+            <p class="discription">Apricots and cranberries make this a smoky treat</p>
+          </div>
+        </div>
+      </div>
+    </div><div class="card">
+      <div class="wrapper flex-container" id="hd7" style="background-image:url(https://loveincorporated.blob.core.windows.net/contentimages/main/476c0263-16bc-4400-a05a-ba01c18d8d05-meatballs.jpg); background-position: center;">
+        <div class="data flex-container">
+          <div class="content flex-container">
+            <div class="content-header flex-container">
+              <span class="price">$6.50</span>
+            </div>
+            <h2 class="title">Albondigas</h2>
+            <p class="discription">Apricots and cranberries make this a smoky treat</p>
+          </div>
+        </div>
+      </div>
+    </div><div class="card">
+      <div class="wrapper flex-container" id="hd8" style="background-image:url(https://foodsogoodmall.com/wp-content/uploads/2015/02/escabeche-800x500.jpg); background-size:cover;">
+        <div class="data flex-container">
+          <div class="content flex-container">
+            <div class="content-header flex-container">
+              <span class="price">$6.50</span>
+            </div>
+            <h2 class="title">Escabeche</h2>
+            <p class="discription">Apricots and cranberries make this a smoky treat</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="wrapper flex-container" id="hd9" style="background-image:url(https://vod-hogarmania.atresmedia.com/hogarmania/images/images01/2013/06/14/5c00f32516334d00019193ba/1239x697.jpg); background-size:cover;">
+        <div class="data flex-container">
+          <div class="content flex-container">
+            <div class="content-header flex-container">
+              <span class="price">$6.50</span>
+            </div>
+            <h2 class="title">Bacalao</h2>
+            <p class="discription">Apricots and cranberries make this a smoky treat</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+    </div>
+    <div class="tabPanel">
+      <div class="row">
+      <div class="column3" style="text-align:center;">
+        <div class="dish-name2" style="margin-left: 2%;">
+          <h4> ITALIAN SOURCE MUSHROOM</h4>
+          <p>Mushroom / Garlic / Veggies</p>
+          <div class="dishs-price"><span>$12</span></div>
+        </div>
+        <div class="dish-name2" style="margin-left: 2%;">
+          <h4> ITALIAN SOURCE MUSHROOM</h4>
+          <p>Mushroom / Garlic / Veggies</p>
+          <div class="dishs-price"><span>$12</span></div>
+        </div>
+      </div>
+        <div class="column3" style="text-align:center;">
+          <div class="dish-name2" style="margin-left: 2%;">
+          <h4> ITALIAN SOURCE MUSHROOM</h4>
+          <p>Mushroom / Garlic / Veggies</p>
+          <div class="dishs-price"><span>$12</span></div>
+        </div>
+        <div class="dish-name2" style="margin-left: 2%;">
+          <h4> ITALIAN SOURCE MUSHROOM</h4>
+          <p>Mushroom / Garlic / Veggies</p>
+          <div class="dishs-price"><span>$12</span></div>
+        </div>
+      </div>
+      <div class="column3" style="text-align:center;">
+        <div class="dish-name2" style="margin-left: 2%;">
+        <h4> ITALIAN SOURCE MUSHROOM</h4>
+        <p>Mushroom / Garlic / Veggies</p>
+        <div class="dishs-price"><span>$12</span></div>
+      </div>
+      <div class="dish-name2" style="margin-left: 2%;">
+        <h4> ITALIAN SOURCE MUSHROOM</h4>
+        <p>Mushroom / Garlic / Veggies</p>
+        <div class="dishs-price"><span>$12</span></div>
+      </div>
+    </div>
+    <div class="column3" style="text-align:center;">
+      <div class="dish-name2" style="margin-left: 2%;">
+      <h4> ITALIAN SOURCE MUSHROOM</h4>
+      <p>Mushroom / Garlic / Veggies</p>
+      <div class="dishs-price"><span>$12</span></div>
+    </div>
+    <div class="dish-name2" style="margin-left: 2%;">
+      <h4> ITALIAN SOURCE MUSHROOM</h4>
+      <p>Mushroom / Garlic / Veggies</p>
+      <div class="dishs-price"><span>$12</span></div>
+    </div>
   </div>
+  <div class="column3" style="text-align:center;">
+    <div class="dish-name2" style="margin-left: 2%;">
+    <h4> ITALIAN SOURCE MUSHROOM</h4>
+    <p>Mushroom / Garlic / Veggies</p>
+    <div class="dishs-price"><span>$12</span></div>
+  </div>
+  <div class="dish-name2" style="margin-left: 2%;">
+    <h4> ITALIAN SOURCE MUSHROOM</h4>
+    <p>Mushroom / Garlic / Veggies</p>
+    <div class="dishs-price"><span>$12</span></div>
+  </div>
+</div>  <div class="column3" style="text-align:center;">
+    <div class="dish-name2" style="margin-left: 2%;">
+    <h4> ITALIAN SOURCE MUSHROOM</h4>
+    <p>Mushroom / Garlic / Veggies</p>
+    <div class="dishs-price"><span>$12</span></div>
+  </div>
+  <div class="dish-name2" style="margin-left: 2%;">
+    <h4> ITALIAN SOURCE MUSHROOM</h4>
+    <p>Mushroom / Garlic / Veggies</p>
+    <div class="dishs-price"><span>$12</span></div>
+  </div>
+</div>  <div class="column3" style="text-align:center;">
+    <div class="dish-name2" style="margin-left: 2%;">
+    <h4> ITALIAN SOURCE MUSHROOM</h4>
+    <p>Mushroom / Garlic / Veggies</p>
+    <div class="dishs-price"><span>$12</span></div>
+  </div>
+  <div class="dish-name2" style="margin-left: 2%;">
+    <h4> ITALIAN SOURCE MUSHROOM</h4>
+    <p>Mushroom / Garlic / Veggies</p>
+    <div class="dishs-price"><span>$12</span></div>
+  </div>
+</div>
+<div class="column3" style="text-align:center;">
+  <div class="dish-name2" style="margin-left: 2%;">
+  <h4> ITALIAN SOURCE MUSHROOM</h4>
+  <p>Mushroom / Garlic / Veggies</p>
+  <div class="dishs-price"><span>$12</span></div>
+</div>
+<div class="dish-name2" style="margin-left: 2%;">
+  <h4> ITALIAN SOURCE MUSHROOM</h4>
+  <p>Mushroom / Garlic / Veggies</p>
+  <div class="dishs-price"><span>$12</span></div>
+</div>
+</div>
+  </div>
+    </div>
+    <div class="tabPanel">
+      <div class="header">
+          <span class="big">HOUSE COCKTAILS</span>
+          <hr/>
+      </div>
+        <div class="column">
+          <div class="fade-in">
+          <div class="menu-list-1">
+          <div class="dish-name">
+            <h4> ITALIAN SOURCE MUSHROOM</h4>
+            <p>Mushroom / Garlic / Veggies</p>
+            <div class="dishs-price"><span>$12</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="fade-in">
+      <div class="menu-list-1">
+      <div class="dish-name">
+        <h4> ITALIAN SOURCE MUSHROOM</h4>
+        <p>Mushroom / Garlic / Veggies</p>
+        <div class="dishs-price"><span>$12</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="fade-in">
+  <div class="menu-list-1">
+  <div class="dish-name">
+    <h4> ITALIAN SOURCE MUSHROOM</h4>
+    <p>Mushroom / Garlic / Veggies</p>
+    <div class="dishs-price"><span>$12</span></div>
+  </div>
+</div>
+</div>
+        </div>
+        <div class="column">
+          <div class="fade-in">
+          <div class="menu-list-1">
+          <div class="dish-name">
+            <h4> ITALIAN SOURCE MUSHROOM</h4>
+            <p>Mushroom / Garlic / Veggies</p>
+            <div class="dishs-price"><span>$12</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="fade-in">
+      <div class="menu-list-1">
+      <div class="dish-name">
+        <h4> ITALIAN SOURCE MUSHROOM</h4>
+        <p>Mushroom / Garlic / Veggies</p>
+        <div class="dishs-price"><span>$12</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="fade-in">
+  <div class="menu-list-1">
+  <div class="dish-name">
+    <h4> ITALIAN SOURCE MUSHROOM</h4>
+    <p>Mushroom / Garlic / Veggies</p>
+    <div class="dishs-price"><span>$12</span></div>
+  </div>
+</div>
+</div>
+        </div>
+        <div class="column">
+          <div class="fade-in">
+          <div class="menu-list-1">
+          <div class="dish-name">
+            <h4> ITALIAN SOURCE MUSHROOM</h4>
+            <p>Mushroom / Garlic / Veggies</p>
+            <div class="dishs-price"><span>$12</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="fade-in">
+      <div class="menu-list-1">
+      <div class="dish-name">
+        <h4> ITALIAN SOURCE MUSHROOM</h4>
+        <p>Mushroom / Garlic / Veggies</p>
+        <div class="dishs-price"><span>$12</span></div>
+      </div>
+    </div>
+  </div>
+      <div class="fade-in">
+      <div class="menu-list-1">
+      <div class="dish-name">
+        <h4> ITALIAN SOURCE MUSHROOM</h4>
+        <p>Mushroom / Garlic / Veggies</p>
+        <div class="dishs-price"><span>$12</span></div>
+      </div>
+    </div>
+  </div>
+  </div>
+        <div class="header">
+            <span class="big">HAPPY HOURS</span>
+            <hr/>
+            <div class= "miniTitle">Monday — Friday, 4pm — 7pm </div>
+            <div class= "miniTitle">Saturday and Sunday, 11:30am — 4pm</div>
+          <hr/>
+        </div>
+        <br/>
+          <div class="column"><div class= "miniTitlex"><div class="fade-in">All Cocktails-$10</div></div></div>
+          <div class="column"><div class= "miniTitlex"><div class="fade-in">All Beer and Cider-$5</div></div></div>
+          <div class="column"><div class= "miniTitlex"><div class="fade-in">All Wine-$12</div></div></div>
+        <br/>
+        <div class="parallax"></div>
+        <br/>
+        <div class="fade-in">
+        <div class="header">
+            <span class="big">BEER &amp; CIDER</span>
+            <hr/>
+          </div>
+        </div>
+            <div class="row">
+            <div class="column3" style="text-align:center;">
+              <div class="dish-name2" style="margin-left: 2%;">
+                <h4> ITALIAN SOURCE MUSHROOM</h4>
+                <p>Mushroom / Garlic / Veggies</p>
+                <div class="dishs-price"><span>$12</span></div>
+              </div>
+              <div class="dish-name2" style="margin-left: 2%;">
+                <h4> ITALIAN SOURCE MUSHROOM</h4>
+                <p>Mushroom / Garlic / Veggies</p>
+                <div class="dishs-price"><span>$12</span></div>
+              </div>
+            </div>
+              <div class="column3" style="text-align:center;">
+                <div class="dish-name2" style="margin-left: 2%;">
+                <h4> ITALIAN SOURCE MUSHROOM</h4>
+                <p>Mushroom / Garlic / Veggies</p>
+                <div class="dishs-price"><span>$12</span></div>
+              </div>
+              <div class="dish-name2" style="margin-left: 2%;">
+                <h4> ITALIAN SOURCE MUSHROOM</h4>
+                <p>Mushroom / Garlic / Veggies</p>
+                <div class="dishs-price"><span>$12</span></div>
+              </div>
+            </div>
+            <div class="column3" style="text-align:center;">
+              <div class="dish-name2" style="margin-left: 2%;">
+              <h4> ITALIAN SOURCE MUSHROOM</h4>
+              <p>Mushroom / Garlic / Veggies</p>
+              <div class="dishs-price"><span>$12</span></div>
+            </div>
+            <div class="dish-name2" style="margin-left: 2%;">
+              <h4> ITALIAN SOURCE MUSHROOM</h4>
+              <p>Mushroom / Garlic / Veggies</p>
+              <div class="dishs-price"><span>$12</span></div>
+            </div>
+          </div>
+          <div class="dish-name2" style="margin-left: 2%;">
+          <h4> ITALIAN SOURCE MUSHROOM</h4>
+          <p>Mushroom / Garlic / Veggies</p>
+          <div class="dishs-price"><span>$12</span></div>
+        </div>
+        <div class="dish-name2" style="margin-left: 2%;">
+          <h4> ITALIAN SOURCE MUSHROOM</h4>
+          <p>Mushroom / Garlic / Veggies</p>
+          <div class="dishs-price"><span>$12</span></div>
+        </div>
+        </div>
+        <div class="parallax2"></div>
+      <br/>
+      <div class="fade-in">
+        <div class="header">
+            <span class="big">WINE</span>
+            <hr/>
+          </div>
+        </div>
+          <div class="row">
+          <!-- <div class="column3" style="text-align:center;"> -->
+          <div class="fade-in">
+            <div class="dish-name2" style="margin-left: 2%;">
+              <h4> ITALIAN SOURCE MUSHROOM</h4>
+              <p>Mushroom / Garlic / Veggies</p>
+              <div class="dishs-price"><span>$12</span></div>
+            </div>
+          </div>
 
+          <!-- </div> -->
+          <div class="fade-in">
+            <div class="column3" style="text-align:center;">
+              <div class="dish-name2" style="margin-left: 2%;">
+              <h4> ITALIAN SOURCE MUSHROOM</h4>
+              <p>Mushroom / Garlic / Veggies</p>
+              <div class="dishs-price"><span>$12</span></div>
+            </div>
+            <div class="dish-name2" style="margin-left: 2%;">
+              <h4> ITALIAN SOURCE MUSHROOM</h4>
+              <p>Mushroom / Garlic / Veggies</p>
+              <div class="dishs-price"><span>$12</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="fade-in">
+          <div class="column3" style="text-align:center;">
+            <div class="dish-name2" style="margin-left: 2%;">
+            <h4> ITALIAN SOURCE MUSHROOM</h4>
+            <p>Mushroom / Garlic / Veggies</p>
+            <div class="dishs-price"><span>$12</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="fade-in">
+        <div class="column3" style="text-align:center;">
+          <div class="dish-name2" style="margin-left: 2%;">
+            <h4> ITALIAN SOURCE MUSHROOM</h4>
+            <p>Mushroom / Garlic / Veggies</p>
+            <div class="dishs-price"><span>$12</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="fade-in">
+        <div class="dish-name2" style="margin-left: 2%;">
+          <h4> ITALIAN SOURCE MUSHROOM</h4>
+          <p>Mushroom / Garlic / Veggies</p>
+          <div class="dishs-price"><span>$12</span></div>
+        </div>
+      </div>
+    </div>
+
+      </div>
+    <div class="tabPanel">
+      <div class="flex-container">
+  <section class="flex-container">
+    <div class="card">
+      <div class="wrapper flex-container" id="hd1" style="background-image:url(https://lh5.googleusercontent.com/proxy/bLtjkgUmgYtiiniy0xQMwly4pKcrri0t-y9jLwUBw9oyX8A0zWODPdCWDP-nh74eMKu_ylc8cBXUDpK4DbG56ER-A1e2YIary_gvsivlWEPOzgY);">
+        <div class="data flex-container">
+          <div class="content flex-container">
+            <div class="content-header flex-container">
+              <span class="price">$7.00</span>
+            </div>
+            <h2 class="title">Paella Valenciana</h2>
+            <p class="discription">Smoky, juicy and delicious. So good we flew it all the way from Alaska!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="wrapper flex-container" id="hd2" style="background-image:url(https://images.summitmedia-digital.com/yummyph/images/2017/07/26/spanish-pisto.jpg);">
+        <div class="data flex-container">
+          <div class="content flex-container">
+            <div class="content-header flex-container">
+              <span class="price">$6.50</span>
+            </div>
+            <h2 class="title">Pisto</h2>
+            <p class="discription">Apricots and cranberries make this a smoky treat</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="wrapper flex-container" id="hd3" style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/7/77/Fabada_en_cazuela_de_barro.jpg); background-size:cover;">
+        <div class="data flex-container">
+          <div class="content flex-container">
+            <div class="content-header flex-container">
+              <span class="price">$6.50</span>
+            </div>
+            <h2 class="title">Fabada Asturiana</h2>
+            <p class="discription">Very traditional, very German, very good.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="wrapper flex-container" id="hd4" style="background-image:url(https://www.lottieanddoof.com/wp-content/uploads/2010/09/IMG_5699.jpg);">
+        <div class="data flex-container">
+          <div class="content flex-container">
+            <div class="content-header flex-container">
+              <span class="price">$7.00</span>
+            </div>
+            <h2 class="title">Gazpacho</h2>
+            <p class="discription">Smoky, juicy and delicious. So good we flew it all the way from Alaska!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="wrapper flex-container" id="hd5" style="background-image:url(https://www.be-hamon.com/wp-content/uploads/2018/12/jamon.jpg); background-size:cover;">
+        <div class="data flex-container">
+          <div class="content flex-container">
+            <div class="content-header flex-container">
+              <span class="price">$6.50</span>
+            </div>
+            <h2 class="title">Jamón</h2>
+            <p class="discription">Apricots and cranberries make this a smoky treat</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="wrapper flex-container" id="hd6" style="background-image:url(https://www.shbarcelona.com/blog/en/wp-content/uploads/2016/09/Fideua-close-up-810x540.jpg);  background-position: center;">
+        <div class="data flex-container">
+          <div class="content flex-container">
+            <div class="content-header flex-container">
+              <span class="price">$6.50</span>
+            </div>
+            <h2 class="title">Fideuà</h2>
+            <p class="discription">Apricots and cranberries make this a smoky treat</p>
+          </div>
+        </div>
+      </div>
+    </div><div class="card">
+      <div class="wrapper flex-container" id="hd7" style="background-image:url(https://loveincorporated.blob.core.windows.net/contentimages/main/476c0263-16bc-4400-a05a-ba01c18d8d05-meatballs.jpg); background-position: center;">
+        <div class="data flex-container">
+          <div class="content flex-container">
+            <div class="content-header flex-container">
+              <span class="price">$6.50</span>
+            </div>
+            <h2 class="title">Albondigas</h2>
+            <p class="discription">Apricots and cranberries make this a smoky treat</p>
+          </div>
+        </div>
+      </div>
+    </div><div class="card">
+      <div class="wrapper flex-container" id="hd8" style="background-image:url(https://foodsogoodmall.com/wp-content/uploads/2015/02/escabeche-800x500.jpg); background-size:cover;">
+        <div class="data flex-container">
+          <div class="content flex-container">
+            <div class="content-header flex-container">
+              <span class="price">$6.50</span>
+            </div>
+            <h2 class="title">Escabeche</h2>
+            <p class="discription">Apricots and cranberries make this a smoky treat</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="wrapper flex-container" id="hd9" style="background-image:url(https://vod-hogarmania.atresmedia.com/hogarmania/images/images01/2013/06/14/5c00f32516334d00019193ba/1239x697.jpg); background-size:cover;">
+        <div class="data flex-container">
+          <div class="content flex-container">
+            <div class="content-header flex-container">
+              <span class="price">$6.50</span>
+            </div>
+            <h2 class="title">Bacalao</h2>
+            <p class="discription">Apricots and cranberries make this a smoky treat</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+    </div>
+  </div>
 <script src="script.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>
+  var preloader = document.getElementById('loading');
+  function myFunction(){
+    preloader.style.display = 'none';
+  }
+</script>
 </body>
 </html>
