@@ -21,7 +21,7 @@
       <p>Come for the tapas, stay for the mains.</p>
       <div class="button">
         <a href= "menu.html" class="btn"> <i class="fa fa-cutlery"/> Menu</a>
-        <a href= "#" class="btn"> <i class = "fa fa-cubes"/> Book</a>
+        <a href= "#" id="book" class="btn"> <i class = "fa fa-cubes"/> Book</a>
         <a href= "about.html" class="btn"> <i class = "fa fa-user"/> About Us</a>
       </div>
     </div>
@@ -46,6 +46,31 @@
     function myFunction(){
       preloader.style.display = 'none';
     }
+  </script>
+
+  <div class="bg-modal">
+    <div class="modal-content">
+      <div class="close">+</div>
+      <h1>Book now</h1>
+      <form action="">
+        <input type="text" placeholder="Name"/>
+        <input type="text" placeholder="Surname"/>
+        <input type="text" placeholder="Email"/>
+        <a href="" class="bookingbutton">Create Booking</a>
+      </form>
+    </div>
+  </div>
+  <script>
+    document.getElementById('book').addEventListener('click',
+    function() {
+      document.querySelector('.bg-modal').style.display = 'flex';
+    });
+
+    document.querySelector('.close').addEventListener('click',
+    function() {
+      document.querySelector('.bg-modal').style.display = 'none';
+    });
+
   </script>
 </body>
 </html>
