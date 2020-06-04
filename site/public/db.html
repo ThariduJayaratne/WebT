@@ -1,0 +1,56 @@
+<!-- var db = openDatabase("itemDB","1.0","itemDB",65535);
+// $(function(){
+// $("#create").click(function(){
+//   db.transaction(function(transaction)){
+//     var sql = "CREATE TABLE items " + "(id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT," + "item VARCHAR(100) NOT NULL," +  "email VARCHAR(500) NOT NULL," + "date VARCHAR(100) NOT NULL," +  "time VARCHAR(100) NOT NULL)";
+//     transaction.executeSql(sql,undefined,
+//       function(){
+//       alert("A table has been reserved for you");
+//     })
+// });
+// });
+//insert
+
+
+$("#insert").click(function(){
+  var sqlite = require("sqlite");
+  var db;
+  create();
+  //   db.transaction(function(transaction){
+  //   var sql = "CREATE TABLE items " + "(id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT," + "item VARCHAR(100) NOT NULL," +  "email VARCHAR(500) NOT NULL," + "date VARCHAR(100) NOT NULL," +  "time VARCHAR(100) NOT NULL)";
+  //   transaction.executeSql(sql,undefined,
+  //     function(){
+  //     alert("A table has been reserved for you");
+  //   })
+  // });
+  var name = $("#item").val();
+  var email = $("#email").val();
+  var qty = $("#quantity").val();
+  var date = $("#date").val();
+  var time = $("#time").val();
+  db.transaction(function(transaction){
+    var sql = "INSERT INTO items(item,email,quantity,date,time) VALUES(?,?,?,?,?)";
+    transaction.executeSql(sql,[name,email,qty,date,time],function(
+    ){
+      alert("A table has been reserved for you");
+    },function(){
+      alert("Unable to reserve a table for you");
+    })
+  });
+}); -->
+
+<!-- const myForm = document.getElementById('myForm');
+myForm.addEventListener('submit',function(e){
+  e.preventDefault();
+  const formData = new FormData(this);
+  fetch('login.php', {
+    method: 'post',
+    body: formData
+  }).then(function (response){
+    return response.text();
+  }).then(function (text){
+    console.log(text);
+  }).catch(function (error){
+    console.error(error);
+  })
+}); -->

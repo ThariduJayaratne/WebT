@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
+<link media="all" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
 <head>
   <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=decive-width, initial-scale=1.0"/>
-  <title>T&amp;J Tapas</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <link rel="stylesheet" type="text/css" href="css/style.css"/>
-  <link media="all" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  <!-- <link href="style.css?v=<?php echo time();?>" rel="stylesheet" type="text/css" /> -->
+  <!-- <link rel="stylesheet" type="text/css" href="http://localhost:8080/WebT/site/public/css/style.css"/> -->
+  <title>T&amp;J Tapas</title>
 </head>
-<body onload="myFunction()">
+<body>
   <header>
     <div class="background-wrap">
   		<video id="video-bg-elem" preload="auto" autoplay="true" loop="loop" muted="muted">
@@ -20,16 +22,16 @@
       </div>
       <p>Come for the tapas, stay for the mains.</p>
       <div class="button">
-        <a href= "menu.html" class="btn"> <i class="fa fa-cutlery"/> Menu</a>
-        <a href= "#" id="book" class="btn"> <i class = "fa fa-cubes"/> Book</a>
-        <a href= "about.html" class="btn"> <i class = "fa fa-user"/> About Us</a>
+        <a href= "menu.html" class="btn"> Menu</a>
+        <a href= "#" id="book" class="btn"> Book</a>
+        <a href= "about.html" class="btn"> About Us</a>
       </div>
     </div>
     <div class="bottom">
       <ul>
-        <li><a href="https://www.facebook.com"><i class="fa fa-facebook" aria-hidden="true"/></a></li>
-        <li><a href="https://www.twitter.com"><i class="fa fa-twitter" aria-hidden="true"/></a></li>
-        <li><a href="https://www.instagram.com"><i class="fa fa-instagram" aria-hidden="true"/></a></li>
+        <li><a href="https://www.facebook.com" class="fa fa-facebook"></a></li>
+        <li><a href="https://www.twitter.com"  class="fa fa-twitter"></a></li>
+        <li><a href="https://www.instagram.com" class="fa fa-instagram"></a></li>
       </ul>
       <p>Copyright &#169; 2020 T&amp;J Tapas. All rights reserved.</p>
     </div>
@@ -38,29 +40,41 @@
     <a href="menu.html" class="box" style="background-image:url(https://www.washingtonian.com/wp-content/uploads/2019/12/DC-4th-of-July-Brunch-Photo.jpg);">Loco Fridays</a>
     <a href="menu.html" class="box" style="background-image:url(https://www.retailmenot.com/blog/wp-content/uploads/sites/2/2018/08/Happy-Hour-Cheers-1-765x453.jpg);">Happy Hour</a>
     <a href="locations.html" class="box" style="background-image:url(images/our_restaurants.jpg);">Our Restaurants</a>
-    <a href="#" class="box" style="background-image:url(images/Careers.jpg);">Careers</a>
+    <a href="menu.html" class="box" style="background-image:url(images/Careers.jpg);">Careers</a>
   </section>
+  <!-- <section>
+    <h3><i class="fa fa-clock-o fa-fw"></i>Hours</h3>
+                    <h4>Lunch</h4>
+                    <p>Mon to Fri: 12:00 PM - 5:00 PM</p>
+                    <h4>Dinner</h4>
+                    <p>Mon to Sat: 6:00 PM -  1:00 AM<br />Sun: 5:30 PM - 12:00 AM</p>
+                    <h3><i class="fa fa-map-marker fa-fw"></i>Directions</h3>
+                    <p>Calle de Almadén, 14, 28014 Madrid, Spain</p>
+
+                    <h3><i class="fa fa-mobile fa-fw"></i>Contacts</h3>
+                    <p>Email: <a href="mailto:yourname@tandjTapas.com">TandJTapas@customerservice.com</a></p>
+                    <p>Phone: +234 3456 678</p>
+  </section> -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-  <script>
-    var preloader = document.getElementById('loading');
-    function myFunction(){
-      preloader.style.display = 'none';
-    }
-  </script>
+
 
   <div class="bg-modal">
     <div class="modal-content">
       <div class="close">+</div>
       <h1>Book now</h1>
-      <form action="">
-        <input type="text" placeholder="Name"/>
-        <input type="text" placeholder="Surname"/>
-        <input type="text" placeholder="Email"/>
-        <a href="" class="bookingbutton">Create Booking</a>
+      <form class="form" id="myForm" action="login.php" method="POST">
+        <input type="text"  class="form-control" name="item" id="item" placeholder="Name" required/>
+        <input type="text" class="form-control" name="email" id="email" placeholder="Email" required/>
+        <input type="number" class="form-control" id="quantity" name="quantity" placeholder="Guest No." required></input>
+        <input type="date" class="form-control" id="date" name="date" placeholder="Date" required></input>
+        <input type="time" class="form-control" id="time" name="time"  placeholder="Time" required></input>
+        <!-- <a href="" class="bookingbutton">Create Booking</a> -->
+        <button href="" class="bookingbutton">Create Booking</button>
+        <br/>
       </form>
     </div>
   </div>
-  <script>
+<script>
     document.getElementById('book').addEventListener('click',
     function() {
       document.querySelector('.bg-modal').style.display = 'flex';

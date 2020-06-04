@@ -50,7 +50,7 @@ p{
 	 display: flex;
 	 flex-flow: row wrap;
 	 text-align: center;
-	 font-family: 'Raleway';
+	 font-family: 'Montserrat';
 	 justify-content: space-between;
 }
  .flex-container > * {
