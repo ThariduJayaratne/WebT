@@ -12,29 +12,29 @@
 }
 
 
-body,html {
+body, html {
   height:100%;
   margin: 0;
   colorL #fff;
   font-family: 'Montserrat';
 }
 
-nav #logo {
-  font-family: moon, sans-serif;
-  font-size: 3em;
-  /* padding-top: 10%; */
-  color: #FED128;
-  text-shadow:
-  -.1vw 0vw .1vw #FED128, -.15vw 0vw .2vw #FED128, -.2vw 0vw .2vw #FED128,
-  -.1vw 0vw 3vw #F0130B, -.2vw 0vw 3vw #F0130B, -.4vw 0vw 3vw #F0130B,
-  -.1vw 0vw 5vw #F0130B, -.2vw 0vw 5vw #F0130B, -.4vw 0vw .8vw #F0130B, .2vw 0vw 10vw #F0130B;
-}
-a {
-  color: #fff;
-  text-decoration: none;
+.logo {
+  margin: 20px 40px;
+  position: absolute;
 }
 
-body{
+.logo-image {
+  height: 150px;
+  width: 200px;
+}
+
+.logo-image:hover {
+  transition: 1s ease;
+  transform: scale(1.1);
+}
+
+body {
   background: url('../images/bg.png') no-repeat;
   background-size: cover;
   padding-bottom: 500px;
@@ -65,6 +65,7 @@ nav ul li {
 }
 nav ul li a {
   color: #000;
+  text-decoration: none;
   padding: 0 30px;
   font-size: 2em;
 }
@@ -98,7 +99,7 @@ h1 {
   font-size: 1.3em;
   line-height: 1.4em;
 }
-a:hover {
+nav ul li a:hover {
   background: black;
   color: white;
   transition: 1s ease;

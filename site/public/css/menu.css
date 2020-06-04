@@ -153,7 +153,7 @@ nav ul li a {
     0 2px 0 black,
     0 -2px 0 black;
 }
-a:hover {
+nav ul li a:hover {
   background: white;
   color: white;
   transition: 1s ease;
