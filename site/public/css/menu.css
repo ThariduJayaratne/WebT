@@ -56,10 +56,19 @@ p{
  .flex-container > * {
 	 flex: 1 100%;
 }
- .card {
+
+.card {
 	 flex: 0 0 17em;
-	 padding: 0.7em 0.5em;
+	 margin: 0.7em 0.0em;
+   border: 3px solid black;
 }
+
+.card-dessert {
+  flex: 0 0 17em;
+  margin: 0.7em 0.0em;
+  border: 3px solid rgb(128,249,255);
+}
+
  .card .form-content {
 	 align-items: center;
 	 justify-content: space-between;
@@ -70,43 +79,109 @@ p{
 	 background-color: #536dfe;
 	 height: 3rem;
 }
- .card .form-content li {
+
+.card-dessert .form-content {
+  align-items: center;
+  justify-content: space-between;
+  list-style-type: none;
+  z-index: -1;
+  transition: transform 0.3s;
+  transform: translateY(100%);
+  background-color: #536dfe;
+  height: 3rem;
+}
+
+.card .form-content li {
 	 flex: 1;
 }
- .card .wrapper {
+
+.card-dessert .form-content li {
+  flex: 1;
+}
+
+.card .wrapper {
 	 background-color: white;
 	 min-height: 36vh;
 	 box-shadow: 0 10px 28px rgba(0, 0, 0, 0.3), 0 9px 6px rgba(0, 0, 0, 0.2);
 	 overflow: hidden;
 }
- .card .wrapper:hover .data {
+
+.card-dessert .wrapper {
+	 background-color: white;
+	 min-height: 36vh;
+	 box-shadow: 0 10px 28px rgba(255, 255, 255, 0.3), 0 9px 6px rgba(255, 255, 255, 0.2);
+	 overflow: hidden;
+}
+
+.card .wrapper:hover .data {
 	 transform: translateY(0);
 }
- .card .data {
+
+.card-dessert .wrapper:hover .data {
+	 transform: translateY(0);
+}
+
+.card .data {
 	 align-self: flex-end;
 	 transform: translateY(calc(36% + 1rem));
 	 transition: transform 0.3s;
 }
-/* 25% to translateY */
- .card .data .content {
+
+.card-dessert .data {
+	 align-self: flex-end;
+	 transform: translateY(calc(36% + 1rem));
+	 transition: transform 0.3s;
+}
+
+.card .data .content {
 	 padding: 0.5em 1em;
 	 z-index: 1;
 	 background-color: white;
 	 box-shadow: 0 5px 20px 5px rgba(0, 0, 0, 0.3);
 }
- .card .content-header {
+
+.card-dessert .data .content {
+	 padding: 0.5em 1em;
+	 z-index: 1;
+	 background-color: white;
+	 box-shadow: 0 5px 20px 5px rgba(255, 255, 255, 0.3);
+}
+
+.card .content-header {
 	 align-items: center;
 }
- .card .price {
+
+.card-dessert .content-header {
+	 align-items: center;
+}
+
+.card .price {
 	 flex: 0;
 	 font-size: 12px;
 }
+
+.card-dessert .price {
+	 flex: 0;
+	 font-size: 12px;
 }
- .card .title {
+
+.card .title {
 	 /* margin-top: 30px; */
 	 text-align: left;
 }
- .card .discription {
+
+.card-dessert .title {
+	 /* margin-top: 30px; */
+	 text-align: left;
+}
+
+.card .discription {
+	 height: 3.5rem;
+	 margin: 0;
+	 text-align: left;
+}
+
+.card-dessert .discription {
 	 height: 3.5rem;
 	 margin: 0;
 	 text-align: left;

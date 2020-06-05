@@ -4,10 +4,10 @@ Web Technologies Coursework: Tharidu Jayaratne (tj17908) and James Lim (jl17056)
 A for HTML
 A for CSS
 A for JS for preloader and menu.html
-B for PNG used in about.html
-C for SVG
+A for PNG used in about.html
+A for SVG
 C for Server
-D for Database, currently working on it
-C for Dynamic pages
-12 for Depth (out of 20)
-Expecting final submission to be 15 or 16
+A for Database, currently working on it
+A for Dynamic pages
+15 for Depth (out of 20)
+
