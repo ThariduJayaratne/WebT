@@ -3,11 +3,11 @@ Web Technologies Coursework: Tharidu Jayaratne (tj17908) and James Lim (jl17056)
 
 A for HTML
 A for CSS
-A for JS for preloader and menu.html
-A for PNG used in about.html
+A for JS
+A for PNG
 A for SVG
 C for Server
-A for Database, currently working on it
+A for Database
 A for Dynamic pages
 15 for Depth (out of 20)
 

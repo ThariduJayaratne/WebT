@@ -4,6 +4,7 @@
 <title>T&amp;J Tapas</title>
 <link rel="stylesheet" type="text/css" href="css/style2.css"/>
 <link rel="stylesheet" type="text/css" href="css/menu.css"/>
+<link rel="stylesheet" type="text/css" href="css/popup.css"/>
 <link media="all" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
 <body onload="myFunction()">
   <!-- <h1 style="background-image:url(images/menu.jpg);">Menu</h1> -->
@@ -289,9 +290,18 @@
     <!-- </a> -->
       <ul>
       <li><a href = "about.html">About</a></li>
-      <li><a href = "#">Careers</a></li>
+      <li><a href="#popup1">Careers</a></li>
       </ul>
     </nav>
+    <div id="popup1" class="overlay">
+    <div class="popup">
+      <h2>:(</h2>
+      <a class="close" href="#">&times;</a>
+      <div class="content">
+        Due to uncertain times, we have paused our recruitment for a few weeks. Feel free to apply to our neighbouring tapas bars :)
+      </div>
+    </div>
+    </div>
   <div class="tabContainer">
     <div class="buttonContainer">
       <button onclick = "showPanel(0, '#f44336')">Mains</button>
@@ -462,97 +472,111 @@
     </div>
     <div class="tabPanel">
       <div class="row">
+        <div class="fade-in">
       <div class="column3" style="text-align:center;">
         <div class="dish-name2" style="margin-left: 2%;">
-          <h4> ITALIAN SOURCE MUSHROOM</h4>
-          <p>Mushroom / Garlic / Veggies</p>
+          <h4>Nachos</h4>
+          <p>With guacamole and cheddar cheese sauce</p>
           <div class="dishs-price"><span>$12</span></div>
         </div>
         <div class="dish-name2" style="margin-left: 2%;">
-          <h4> ITALIAN SOURCE MUSHROOM</h4>
-          <p>Mushroom / Garlic / Veggies</p>
+          <h4> French Fries with 4 Sauces</h4>
+          <p>Mayonnaise, alioli, ketchup and brava</p>
           <div class="dishs-price"><span>$12</span></div>
         </div>
       </div>
+    </div>
+      <div class="fade-in">
         <div class="column3" style="text-align:center;">
           <div class="dish-name2" style="margin-left: 2%;">
-          <h4> ITALIAN SOURCE MUSHROOM</h4>
-          <p>Mushroom / Garlic / Veggies</p>
+          <h4>Chicken Poppers (8pcs)</h4>
+          <p>With mayonnaise</p>
           <div class="dishs-price"><span>$12</span></div>
         </div>
         <div class="dish-name2" style="margin-left: 2%;">
-          <h4> ITALIAN SOURCE MUSHROOM</h4>
-          <p>Mushroom / Garlic / Veggies</p>
+          <h4>Gouda Cheese Poppers (8pcs)</h4>
+          <p>With strawberry jam</p>
           <div class="dishs-price"><span>$12</span></div>
         </div>
       </div>
+    </div>
+    <div class="fade-in">
       <div class="column3" style="text-align:center;">
         <div class="dish-name2" style="margin-left: 2%;">
-        <h4> ITALIAN SOURCE MUSHROOM</h4>
-        <p>Mushroom / Garlic / Veggies</p>
+        <h4>Chicken Wings (5pcs)</h4>
+        <p>Barbecue flavour</p>
         <div class="dishs-price"><span>$12</span></div>
       </div>
       <div class="dish-name2" style="margin-left: 2%;">
-        <h4> ITALIAN SOURCE MUSHROOM</h4>
-        <p>Mushroom / Garlic / Veggies</p>
+        <h4>Squid ink calamari and mayonnaise</h4>
+        <p> With Mushroom / Garlic / Veggies</p>
         <div class="dishs-price"><span>$12</span></div>
       </div>
     </div>
+  </div>
+  <div class="fade-in">
     <div class="column3" style="text-align:center;">
       <div class="dish-name2" style="margin-left: 2%;">
-      <h4> ITALIAN SOURCE MUSHROOM</h4>
-      <p>Mushroom / Garlic / Veggies</p>
+      <h4>Brie cheese and tomato</h4>
+      <p>With Mushroom / Garlic / Veggies</p>
       <div class="dishs-price"><span>$12</span></div>
     </div>
     <div class="dish-name2" style="margin-left: 2%;">
-      <h4> ITALIAN SOURCE MUSHROOM</h4>
-      <p>Mushroom / Garlic / Veggies</p>
+      <h4>Potato salad and roasted red pepper</h4>
+      <p> With Mushroom / Garlic / Veggies</p>
       <div class="dishs-price"><span>$12</span></div>
     </div>
   </div>
+</div>
+<div class="fade-in">
   <div class="column3" style="text-align:center;">
     <div class="dish-name2" style="margin-left: 2%;">
-    <h4> ITALIAN SOURCE MUSHROOM</h4>
-    <p>Mushroom / Garlic / Veggies</p>
+    <h4> Chicken, smoked bacon and brava sauce</h4>
+    <p>With Mushroom / Garlic / Veggies</p>
     <div class="dishs-price"><span>$12</span></div>
   </div>
   <div class="dish-name2" style="margin-left: 2%;">
-    <h4> ITALIAN SOURCE MUSHROOM</h4>
-    <p>Mushroom / Garlic / Veggies</p>
+    <h4>Garlic pork loin and cream cheese</h4>
+    <p>With Mushroom / Garlic / Veggies</p>
     <div class="dishs-price"><span>$12</span></div>
   </div>
-</div>  <div class="column3" style="text-align:center;">
+</div>
+</div>
+<div class="fade-in">
+  <div class="column3" style="text-align:center;">
     <div class="dish-name2" style="margin-left: 2%;">
-    <h4> ITALIAN SOURCE MUSHROOM</h4>
-    <p>Mushroom / Garlic / Veggies</p>
+    <h4>Meatballs and BBQ sauce </h4>
+    <p>With Mushroom / Garlic / Veggies</p>
     <div class="dishs-price"><span>$12</span></div>
   </div>
   <div class="dish-name2" style="margin-left: 2%;">
-    <h4> ITALIAN SOURCE MUSHROOM</h4>
-    <p>Mushroom / Garlic / Veggies</p>
+    <h4>Botifarra sausage and BBQ sauce</h4>
+    <p>With Mushroom / Garlic / Veggies</p>
     <div class="dishs-price"><span>$12</span></div>
   </div>
-</div>  <div class="column3" style="text-align:center;">
+</div>
+</div> 
+<div class="column3" style="text-align:center;">
     <div class="dish-name2" style="margin-left: 2%;">
-    <h4> ITALIAN SOURCE MUSHROOM</h4>
-    <p>Mushroom / Garlic / Veggies</p>
+    <h4> Shredded meat and crunchy onion</h4>
+    <p>With Mushroom / Garlic / Veggies</p>
     <div class="dishs-price"><span>$12</span></div>
   </div>
   <div class="dish-name2" style="margin-left: 2%;">
-    <h4> ITALIAN SOURCE MUSHROOM</h4>
-    <p>Mushroom / Garlic / Veggies</p>
+    <h4>Smoked salmon and cream cheese</h4>
+    <p>With Mushroom / Garlic / Veggies</p>
     <div class="dishs-price"><span>$12</span></div>
   </div>
 </div>
 <div class="column3" style="text-align:center;">
   <div class="dish-name2" style="margin-left: 2%;">
-  <h4> ITALIAN SOURCE MUSHROOM</h4>
-  <p>Mushroom / Garlic / Veggies</p>
+  <h4>Grilled chorizo sausage</h4>
+  <p>With Mushroom / Garlic / Veggies</p>
   <div class="dishs-price"><span>$12</span></div>
 </div>
 <div class="dish-name2" style="margin-left: 2%;">
-  <h4> ITALIAN SOURCE MUSHROOM</h4>
-  <p>Mushroom / Garlic / Veggies</p>
+  <h4>Kebab chicken, lettuce and tomato</h4>
+  <p>With Mushroom / Garlic / Veggies</p>
   <div class="dishs-price"><span>$12</span></div>
 </div>
 </div>
@@ -567,8 +591,8 @@
           <div class="fade-in">
           <div class="menu-list-1">
           <div class="dish-name">
-            <h4> ITALIAN SOURCE MUSHROOM</h4>
-            <p>Mushroom / Garlic / Veggies</p>
+            <h4>Strawberry Daiquiri</h4>
+            <p>Duppy Share, strawberry & fresh lime</p>
             <div class="dishs-price"><span>$12</span></div>
           </div>
         </div>
@@ -576,8 +600,8 @@
       <div class="fade-in">
       <div class="menu-list-1">
       <div class="dish-name">
-        <h4> ITALIAN SOURCE MUSHROOM</h4>
-        <p>Mushroom / Garlic / Veggies</p>
+        <h4>Island Iced Tea</h4>
+        <p>White rum, tequila, gin and Triple Sec</p>
         <div class="dishs-price"><span>$12</span></div>
       </div>
     </div>
@@ -585,8 +609,8 @@
   <div class="fade-in">
   <div class="menu-list-1">
   <div class="dish-name">
-    <h4> ITALIAN SOURCE MUSHROOM</h4>
-    <p>Mushroom / Garlic / Veggies</p>
+    <h4> Reggae Rum Punch</h4>
+    <p>Wray & Nephew, strawberry, grenadine, lime</p>
     <div class="dishs-price"><span>$12</span></div>
   </div>
 </div>
@@ -596,8 +620,8 @@
           <div class="fade-in">
           <div class="menu-list-1">
           <div class="dish-name">
-            <h4> ITALIAN SOURCE MUSHROOM</h4>
-            <p>Mushroom / Garlic / Veggies</p>
+            <h4> One Love</h4>
+            <p>Dark rum, passion fruit & coconut</p>
             <div class="dishs-price"><span>$12</span></div>
           </div>
         </div>
@@ -605,8 +629,8 @@
       <div class="fade-in">
       <div class="menu-list-1">
       <div class="dish-name">
-        <h4> ITALIAN SOURCE MUSHROOM</h4>
-        <p>Mushroom / Garlic / Veggies</p>
+        <h4>Wray Sour</h4>
+        <p>Wray & Nephew, blue curacao & fresh lime</p>
         <div class="dishs-price"><span>$12</span></div>
       </div>
     </div>
@@ -614,8 +638,8 @@
   <div class="fade-in">
   <div class="menu-list-1">
   <div class="dish-name">
-    <h4> ITALIAN SOURCE MUSHROOM</h4>
-    <p>Mushroom / Garlic / Veggies</p>
+    <h4>Kokomo</h4>
+    <p>Koko Kanu, blue curacao & grapefruit crush</p>
     <div class="dishs-price"><span>$12</span></div>
   </div>
 </div>
@@ -625,8 +649,8 @@
           <div class="fade-in">
           <div class="menu-list-1">
           <div class="dish-name">
-            <h4> ITALIAN SOURCE MUSHROOM</h4>
-            <p>Mushroom / Garlic / Veggies</p>
+            <h4> Funky Madrid</h4>
+            <p>Prosecco, strawberry & grapefruit crush</p>
             <div class="dishs-price"><span>$12</span></div>
           </div>
         </div>
@@ -634,8 +658,8 @@
       <div class="fade-in">
       <div class="menu-list-1">
       <div class="dish-name">
-        <h4> ITALIAN SOURCE MUSHROOM</h4>
-        <p>Mushroom / Garlic / Veggies</p>
+        <h4>Espresso Martini </h4>
+        <p>Espresso shots, dark rum & vanilla</p>
         <div class="dishs-price"><span>$12</span></div>
       </div>
     </div>
@@ -643,8 +667,8 @@
       <div class="fade-in">
       <div class="menu-list-1">
       <div class="dish-name">
-        <h4> ITALIAN SOURCE MUSHROOM</h4>
-        <p>Mushroom / Garlic / Veggies</p>
+        <h4> Rum Thief</h4>
+        <p>Duppy Share, fresh lime, vanilla & raspberry</p>
         <div class="dishs-price"><span>$12</span></div>
       </div>
     </div>
@@ -653,8 +677,8 @@
         <div class="header">
             <span class="big">HAPPY HOURS</span>
             <hr/>
-            <div class= "miniTitle">Monday — Friday, 4pm — 7pm </div>
-            <div class= "miniTitle">Saturday and Sunday, 11:30am — 4pm</div>
+            <div class= "miniTitle">Monday to Friday, 4pm to 7pm </div>
+            <div class= "miniTitle">Saturday and Sunday, 11:30am to 4pm</div>
           <hr/>
         </div>
         <br/>
@@ -673,49 +697,49 @@
             <div class="row">
             <div class="column3" style="text-align:center;">
               <div class="dish-name2" style="margin-left: 2%;">
-                <h4> ITALIAN SOURCE MUSHROOM</h4>
-                <p>Mushroom / Garlic / Veggies</p>
+                <h4> Ginger Beer</h4>
+                <p>Our ginger beer with spiced pepper & fresh lime</p>
                 <div class="dishs-price"><span>$12</span></div>
               </div>
               <div class="dish-name2" style="margin-left: 2%;">
-                <h4> ITALIAN SOURCE MUSHROOM</h4>
-                <p>Mushroom / Garlic / Veggies</p>
+                <h4> Hiver Honey Beer</h4>
+                <p>Made with Spanish honey to make a crisp and refreshing blonde beer</p>
                 <div class="dishs-price"><span>$12</span></div>
               </div>
             </div>
               <div class="column3" style="text-align:center;">
                 <div class="dish-name2" style="margin-left: 2%;">
-                <h4> ITALIAN SOURCE MUSHROOM</h4>
-                <p>Mushroom / Garlic / Veggies</p>
+                <h4> Corona</h4>
+                <p>330ml (4.5%) Mexico </p>
                 <div class="dishs-price"><span>$12</span></div>
               </div>
               <div class="dish-name2" style="margin-left: 2%;">
-                <h4> ITALIAN SOURCE MUSHROOM</h4>
-                <p>Mushroom / Garlic / Veggies</p>
+                <h4>Peroni Nastro Azzuro</h4>
+                <p>330ml (5.1%) Italy</p>
                 <div class="dishs-price"><span>$12</span></div>
               </div>
             </div>
             <div class="column3" style="text-align:center;">
               <div class="dish-name2" style="margin-left: 2%;">
-              <h4> ITALIAN SOURCE MUSHROOM</h4>
-              <p>Mushroom / Garlic / Veggies</p>
+              <h4> Hawkes Urban Orchard</h4>
+              <p>330ml (4.5%) England</p>
               <div class="dishs-price"><span>$12</span></div>
             </div>
             <div class="dish-name2" style="margin-left: 2%;">
-              <h4> ITALIAN SOURCE MUSHROOM</h4>
-              <p>Mushroom / Garlic / Veggies</p>
+              <h4> Old Mout Kiwi and Lime</h4>
+              <p>500ml (4%) New Zealand</p>
               <div class="dishs-price"><span>$12</span></div>
             </div>
           </div>
           <div class="dish-name2" style="margin-left: 2%;">
-          <h4> ITALIAN SOURCE MUSHROOM</h4>
-          <p>Mushroom / Garlic / Veggies</p>
+          <h4>Old Mout Strawberry and Pomegranate</h4>
+          <p>500ml (4%) New Zealand</p>
           <div class="dishs-price"><span>$12</span></div>
         </div>
         <div class="dish-name2" style="margin-left: 2%;">
-          <h4> ITALIAN SOURCE MUSHROOM</h4>
-          <p>Mushroom / Garlic / Veggies</p>
-          <div class="dishs-price"><span>$12</span></div>
+          <h4> South Country Style Cider</h4>
+          <p>500ml (28%) India</p>
+          <div class="dishs-price"><span>$100</span></div>
         </div>
         </div>
         <div class="parallax2"></div>
@@ -730,8 +754,8 @@
           <!-- <div class="column3" style="text-align:center;"> -->
           <div class="fade-in">
             <div class="dish-name2" style="margin-left: 2%;">
-              <h4> ITALIAN SOURCE MUSHROOM</h4>
-              <p>Mushroom / Garlic / Veggies</p>
+              <h4>Pinot Grigio</h4>
+              <p>Dry - Italian - Pear, lemon & nectarine</p>
               <div class="dishs-price"><span>$12</span></div>
             </div>
           </div>
@@ -740,13 +764,13 @@
           <div class="fade-in">
             <div class="column3" style="text-align:center;">
               <div class="dish-name2" style="margin-left: 2%;">
-              <h4> ITALIAN SOURCE MUSHROOM</h4>
-              <p>Mushroom / Garlic / Veggies</p>
+              <h4> Chenin Blanc </h4>
+              <p>Juicy - South African - Passion fruit, apples & honey</p>
               <div class="dishs-price"><span>$12</span></div>
             </div>
             <div class="dish-name2" style="margin-left: 2%;">
-              <h4> ITALIAN SOURCE MUSHROOM</h4>
-              <p>Mushroom / Garlic / Veggies</p>
+              <h4>Tempranillo-Shiraz </h4>
+              <p>Juicy - Spanish - Cherries & sweet figs</p>
               <div class="dishs-price"><span>$12</span></div>
             </div>
           </div>
@@ -754,8 +778,8 @@
         <div class="fade-in">
           <div class="column3" style="text-align:center;">
             <div class="dish-name2" style="margin-left: 2%;">
-            <h4> ITALIAN SOURCE MUSHROOM</h4>
-            <p>Mushroom / Garlic / Veggies</p>
+            <h4>Pinot Noir</h4>
+            <p>Fruity - French - Raspberries, vanilla & strawberry</p>
             <div class="dishs-price"><span>$12</span></div>
           </div>
         </div>
@@ -763,16 +787,16 @@
       <div class="fade-in">
         <div class="column3" style="text-align:center;">
           <div class="dish-name2" style="margin-left: 2%;">
-            <h4> ITALIAN SOURCE MUSHROOM</h4>
-            <p>Mushroom / Garlic / Veggies</p>
+            <h4>Malbec</h4>
+            <p>Spicy - Argentina - Blackberries, red plums & cocoa</p>
             <div class="dishs-price"><span>$12</span></div>
           </div>
         </div>
       </div>
       <div class="fade-in">
         <div class="dish-name2" style="margin-left: 2%;">
-          <h4> ITALIAN SOURCE MUSHROOM</h4>
-          <p>Mushroom / Garlic / Veggies</p>
+          <h4>Sauvignon Blanc </h4>
+          <p>Zesty - New Zealand - Melon, gooseberry & lime</p>
           <div class="dishs-price"><span>$12</span></div>
         </div>
       </div>

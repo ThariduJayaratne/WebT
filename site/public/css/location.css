@@ -1,11 +1,26 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 @import url(https://fonts.googleapis.com/css?family=Montserrat:700);
+@font-face {
+  font-family: moon;
+  src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/707108/moon.ttf);
+}
+body{
+  background-color: red;
+}
 h1 {
   text-align: center;
-  font-family: Montserrat, sans-serif;
-  color: #333;
+  font-family: moon, sans-serif;
+  color: #fff;
+  font-size: 2.75em;
 }
 .accordion {
+  width: 100%;
+  max-width: 1080px;
+  height: 70%;
+  overflow: hidden;
+  margin: 50px auto;
+}
+.accordion2 {
   width: 100%;
   max-width: 1080px;
   height: 70%;
@@ -87,7 +102,7 @@ h1 {
   background-image: url('http://michael-ferry.com/assets/accordion4.jpg');
 }
 .accordion ul li:nth-child(5) {
-  background-image: url('http://michael-ferry.com/assets/accordion5.jpg');
+  background-image: url('https://www.wattagnet.com/ext/resources/Images-by-month-year/19_12/poultry/Etihad-Towers-In-Abu-Dhabi.jpg');
 }
 .accordion ul li:nth-child(6) {
   background-image: url('http://michael-ferry.com/assets/accordion6.jpg');
@@ -134,6 +149,136 @@ h1 {
     height: auto;
   }
   .accordion ul li, .accordion ul:hover li, .accordion ul li:hover, .accordion ul:hover li:hover {
+    position: relative;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+.accordion2 ul {
+  width: 100%;
+  display: table;
+  table-layout: fixed;
+  margin: 0;
+  padding: 0;
+}
+.accordion2 ul li {
+  display: table-cell;
+  vertical-align: bottom;
+  position: relative;
+  width: 16.666%;
+  height: 250px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  transition: all 500ms ease;
+}
+.accordion2 ul li div {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+}
+.accordion2 ul li div a {
+  display: block;
+  height: 250px;
+  width: 100%;
+  position: relative;
+  z-index: 3;
+  vertical-align: bottom;
+  padding: 15px 20px;
+  box-sizing: border-box;
+  color: #fff;
+  text-decoration: none;
+  font-family: Open Sans, sans-serif;
+  transition: all 200ms ease;
+}
+.accordion2 ul li div a * {
+  opacity: 0;
+  margin: 0;
+  width: 100%;
+  text-overflow: ellipsis;
+  position: relative;
+  z-index: 5;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-transform: translateX(-20px);
+  transform: translateX(-20px);
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
+}
+.accordion2 ul li div a h2 {
+  font-family: Montserrat, sans-serif;
+  text-overflow: clip;
+  font-size: 24px;
+  text-transform: uppercase;
+  margin-bottom: 2px;
+  top: 160px;
+}
+.accordion2 ul li div a p {
+  top: 160px;
+  font-size: 13.5px;
+}
+.accordion2 ul li:nth-child(1) {
+  background-image: url('https://www.mobileworldlive.com/wp-content/uploads/2019/12/Brazil.png');
+}
+.accordion2 ul li:nth-child(2) {
+  background-image: url('https://www.viseo.com/sites/default/files/styles/crop_image/public/2018-11/Sydney.png?h=a4385ee9&itok=mP5eU_KC');
+}
+.accordion2 ul li:nth-child(3) {
+  background-image: url('https://ichef.bbci.co.uk/wwfeatures/live/976_549/images/live/p0/7x/q9/p07xq911.jpg');
+}
+.accordion2 ul li:nth-child(4) {
+  background-image: url('https://goingrus.com/info/images/Beijing/Beijing-001.jpeg');
+}
+.accordion2 ul li:nth-child(5) {
+  background-image: url('https://www.aarpinternational.org/Image%20Library/620a9e2f-c1de-4c1a-9a25-882951a86c5c/Images/mexico.jpg');
+}
+.accordion2 ul li:nth-child(6) {
+  background-image: url('https://744025.smushcdn.com/1245953/wp-content/uploads/2020/03/new-york-4854718_1920.jpg?lossy=1&strip=1&webp=1');
+}
+.accordion2 ul:hover li, .accordion2 ul:focus-within li {
+  width: 8%;
+}
+.accordion2 ul li:focus {
+  outline: none;
+}
+.accordion2 ul:hover li:hover, .accordion2 ul li:focus, .accordion2 ul:focus-within li:focus {
+  width: 60%;
+}
+.accordion2 ul:hover li:hover a, .accordion2 ul li:focus a, .accordion2 ul:focus-within li:focus a {
+  background: rgba(0, 0, 0, 0.4);
+}
+.accordion2 ul:hover li:hover a *, .accordion2 ul li:focus a *, .accordion2 ul:focus-within li:focus a * {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+.accordion2 ul:hover li {
+  width: 8% !important;
+}
+.accordion2 ul:hover li a * {
+  opacity: 0 !important;
+}
+.accordion2 ul:hover li:hover {
+  width: 60% !important;
+}
+.accordion2 ul:hover li:hover a {
+  background: rgba(0, 0, 0, 0.4);
+}
+.accordion2 ul:hover li:hover a * {
+  opacity: 1 !important;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+@media screen and (max-width: 600px) {
+  body {
+    margin: 0;
+  }
+  .accordion2 {
+    height: auto;
+  }
+  .accordion2 ul li, .accordion2 ul:hover li, .accordion2 ul li:hover, .accordion2 ul:hover li:hover {
     position: relative;
     display: table;
     table-layout: fixed;

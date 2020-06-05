@@ -5,6 +5,7 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <link rel="stylesheet" type="text/css" href="css/style.css"/>
+  <link rel="stylesheet" type="text/css" href="css/popup.css"/>
   <!-- <link href="style.css?v=<?php echo time();?>" rel="stylesheet" type="text/css" /> -->
   <!-- <link rel="stylesheet" type="text/css" href="http://localhost:8080/WebT/site/public/css/style.css"/> -->
   <title>T&amp;J Tapas</title>
@@ -40,27 +41,35 @@
     <a href="menu.html" class="box" style="background-image:url(https://www.washingtonian.com/wp-content/uploads/2019/12/DC-4th-of-July-Brunch-Photo.jpg);">Loco Fridays</a>
     <a href="menu.html" class="box" style="background-image:url(https://www.retailmenot.com/blog/wp-content/uploads/sites/2/2018/08/Happy-Hour-Cheers-1-765x453.jpg);">Happy Hour</a>
     <a href="locations.html" class="box" style="background-image:url(images/our_restaurants.jpg);">Our Restaurants</a>
-    <a href="menu.html" class="box" style="background-image:url(images/Careers.jpg);">Careers</a>
+    <a href="#popup1" class="box" style="background-image:url(images/Careers.jpg);">Careers</a>
   </section>
-  <!-- <section>
-    <h3><i class="fa fa-clock-o fa-fw"></i>Hours</h3>
-                    <h4>Lunch</h4>
-                    <p>Mon to Fri: 12:00 PM - 5:00 PM</p>
-                    <h4>Dinner</h4>
-                    <p>Mon to Sat: 6:00 PM -  1:00 AM<br />Sun: 5:30 PM - 12:00 AM</p>
-                    <h3><i class="fa fa-map-marker fa-fw"></i>Directions</h3>
-                    <p>Calle de Almadén, 14, 28014 Madrid, Spain</p>
+  <div id="popup1" class="overlay">
+	<div class="popup">
+		<h2>:(</h2>
+		<a class="close" href="#">&times;</a>
+		<div class="content">
+      Due to uncertain times, we have paused our recruitment for a few weeks. Feel free to apply to our neighbouring tapas bars :)
+		</div>
+	</div>
+</div>
+<!-- <div style="margin-left:50px;">
+    <h3>Hours</h3>
+                    <p>Lunch</p>
+                    <h4>Mon to Fri: 12:00 PM - 5:00 PM</h4>
+                    <p>Dinner</p>
+                    <h4>Mon to Sat: 6:00 PM -  1:00 AM<br />Sun: 5:30 PM - 12:00 AM</h4>
+                    <p>Directions</p>
+                    <h4>Calle de Almadén, 14, 28014 Madrid, Spain</h4>
 
-                    <h3><i class="fa fa-mobile fa-fw"></i>Contacts</h3>
-                    <p>Email: <a href="mailto:yourname@tandjTapas.com">TandJTapas@customerservice.com</a></p>
-                    <p>Phone: +234 3456 678</p>
-  </section> -->
+                    <p>Contacts</p>
+                    <h3>Email: <a href="mailto:yourname@tandjTapas.com">TandJTapas@customerservice.com</a></p>
+                    <h3>Phone: +234 3456 678</p>
+</div> -->
+
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-
-
   <div class="bg-modal">
     <div class="modal-content">
-      <div class="close">+</div>
+      <div class="close2">+</div>
       <h1>Book now</h1>
       <form class="form" id="myForm" action="login.php" method="POST">
         <input type="text" class="form-control" name="item" id="item" placeholder="Name" required="true"/>
@@ -80,7 +89,7 @@
       document.querySelector('.bg-modal').style.display = 'flex';
     });
 
-    document.querySelector('.close').addEventListener('click',
+    document.querySelector('.close2').addEventListener('click',
     function() {
       document.querySelector('.bg-modal').style.display = 'none';
     });

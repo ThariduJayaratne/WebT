@@ -43,10 +43,10 @@ background-size: cover;
 } */
 </style>
 <title>
-  <head>Fetched Data</head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  Booking Confirmed
 </title>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <body>
   <div class="logo">
     <a href="index.html" class="logo-link">
