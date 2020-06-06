@@ -3,6 +3,7 @@ include_once 'connection.php';
 $maxid = "SELECT * FROM users WHERE user_id=(SELECT MAX(user_id) FROM users)";
 $result = mysqli_query($newC,$maxid);
 $followingdata = $result->fetch_array(MYSQLI_ASSOC);
+ob_start();
 ?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -35,6 +36,28 @@ background-size: cover;
 .logo-image:hover {
   transition: 1s ease;
   transform: scale(1.1);
+}
+ .button {
+  padding-top: 3%;
+}
+
+ .button .btn {
+  padding: 1% 3%;
+  margin-left: 64%;
+  border: 3px solid black;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px;
+  font-family: moon, sans-serif;
+  font-size: 2em;
+  text-decoration: none;
+  color: black;
+  transition: 0.6s;
+}
+
+.button .btn:hover {
+  background: black;
+  color: white;
 }
 /* h2{
   font-family: 'moon';
@@ -321,9 +344,9 @@ background-size: cover;
     </svg>
     </a>
   </div>
-  <table border="3px" style="width:600px; line-height:40px; margin-left:50%; margin-top:190px;">
+  <table border="3px" style="width:600px; line-height:40px; margin-left:50%; margin-top:40px;">
     <tr>
-      <th style="background-color: #a9a9a9;"colspan="5"><h2>Your Booking has been placed</h2></th>
+      <th style="background-color: #a9a9a9;"colspan="5"><h2>Your Booking has been placed</h2><p id="demo"></p></th>
     </tr>
   <t>
         <th>Name</th>
@@ -332,7 +355,6 @@ background-size: cover;
         <th>Date</th>
         <th>Time</th>
   </t>
-
    <tr>
      <td  style="text-align: center;"><?php echo $followingdata['user_name']; ?></td>
      <td style="text-align: center;"><?php echo $followingdata['user_email']; ?></td>
@@ -340,7 +362,37 @@ background-size: cover;
      <td  style="text-align: center;"><?php echo $followingdata['user_date']; ?></td>
      <td  style="text-align: center;"><?php echo $followingdata['user_time']; ?></td>
    </tr>
-
   </table>
+  <?php
+    if(isset($_POST['button1'])) {
+      $id = $followingdata['user_id'];
+      mysqli_query($newC,"DELETE FROM users WHERE user_id=$id");
+      header("Location:index.html");
+      ob_end_flush();
+      include_once 'updateDB.php';
+    }
+  ?>
+  <form method="post">
+    <div class="button">
+        <input class="btn" type="submit" name="button1"
+                value="Cancel Booking"/>
+    </div>
+  </form>
+  <!-- <div class="button">
+    <a href= "#" id="book" class="btn"> Cancel Booking</a>
+    // mysqli_close($newC);
+  </div> -->
+  <script>
+  function makeid(length) {
+   var result           = '';
+   var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+   var charactersLength = characters.length;
+   for ( var i = 0; i < length; i++ ) {
+      result += characters.charAt(Math.floor(Math.random() * charactersLength));
+   }
+   return result;
+}
+  document.getElementById("demo").innerHTML = "Your reference code is " + makeid(8);
+  </script>
 </body>
 </html>
