@@ -2,8 +2,6 @@
 include_once 'connection.php';
 $maxid = "SELECT * FROM users WHERE user_id=(SELECT MAX(user_id) FROM users)";
 $result = mysqli_query($newC,$maxid);
-// $query = "SELECT * from users";
-// $result=mysqli_query($newC,$query);
 $followingdata = $result->fetch_array(MYSQLI_ASSOC);
 ?>
 <!DOCTYPE html>
