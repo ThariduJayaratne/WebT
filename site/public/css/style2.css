@@ -172,7 +172,9 @@ h1{
   width:25%;
   height:100%;
   float: left;
-  border: none;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom: none;
   outline: none;
   cursor: pointer;
   padding: 10px;
