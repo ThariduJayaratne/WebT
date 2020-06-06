@@ -16,7 +16,7 @@ function showPanel(panelIndex, colorCode) {
 
 }
 
-showPanel(0,'#f44336');
+showPanel(0,'#a66767');
 
 const faders = document.querySelectorAll(".fade-in");
 const appearOptions = {

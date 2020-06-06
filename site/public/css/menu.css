@@ -237,3 +237,12 @@ nav ul li a:hover {
   border: 3px solid black;
 
 }
+
+.tapas {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.tapas-item {
+  padding: 20px;
+}
