@@ -166,8 +166,8 @@ h1{
 }
 .tabContainer .buttonContainer{
   height: 10%;
-  /* margin-top: 5%; */
 }
+
 .tabContainer .buttonContainer button{
   width:25%;
   height:100%;
@@ -182,7 +182,7 @@ h1{
 }
 .tabContainer .buttonContainer button:hover{
   background-color: white;
-  transition: 1s ease;
+  transition: 0.3s ease;
 }
 .tabContainer .tabPanel{
   height: 100%;
