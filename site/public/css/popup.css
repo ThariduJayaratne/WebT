@@ -75,6 +75,8 @@ body {
   font-weight: bold;
   text-decoration: none;
   color: #333;
+  transform: rotate(45deg);
+  cursor: pointer;
 }
 .popup .close:hover {
   color: #06D85F;
