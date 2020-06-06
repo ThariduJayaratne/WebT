@@ -191,6 +191,11 @@ header .bottom p {
   font-size: 2em;
   font-weight: bold;
   cursor: pointer;
+  transition: all 200ms;
+}
+
+.modal-content .close2:hover {
+  color: #06D85F;
 }
 
 input {

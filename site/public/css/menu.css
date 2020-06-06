@@ -30,6 +30,7 @@
 }
  section.flex-container {
 	 justify-content: space-around;
+
 }
  h2 {
 	 font-family: moon, sans-serif;
@@ -59,13 +60,13 @@ p{
 
 .card {
 	 flex: 0 0 17em;
-	 margin: 0.7em 0.0em;
+	 margin: 1em 0.7em;
    border: 3px solid black;
 }
 
 .card-dessert {
   flex: 0 0 17em;
-  margin: 0.7em 0.0em;
+  margin: 2em 0.7em;
   border: 3px solid rgb(128,249,255);
 }
 

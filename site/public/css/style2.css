@@ -31,12 +31,10 @@
 
 body {
   margin: 0;
-  padding-bottom: 10px;
-  padding-left: 50px;
-  padding-right: 50px;
  /* background: linear-gradient(15deg, #d33f34 50%, #a61322 50.1%); */
  background-color: brown;
 }
+
 h1{
   margin-left: 5%;
   font-family: moon, sans-serif;
