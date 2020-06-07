@@ -426,7 +426,7 @@ body{
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <body>
   <div class="user-profile">
-	<img class="avatar" src="https://cdn3.iconfinder.com/data/icons/user-interface-web-1/550/web-circle-circular-round_54-512.png" alt="Ash" />
+	<img class="avatar" src="https://cdn2.iconfinder.com/data/icons/people-flat-design/64/Woman-Lady-Girl-Female-Avatar-People-Happy-512.png" alt="Ash" />
     <div class="username"><?php echo $rowdata['user_name']; ?></div>
     <div class="bio">
       <?php echo $rowdata['user_email']; ?>
