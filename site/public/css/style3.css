@@ -106,3 +106,36 @@ nav ul li a:hover {
   border-radius: 10px;
   border: 3px solid black;
 }
+
+@media screen and (max-width: 700px) {
+
+  h1 {
+    font-size: 1.5em;
+  }
+  nav {
+    padding: 20px;
+  }
+
+  nav ul li a {
+    color: #000;
+    text-decoration: none;
+    padding: 0 10px;
+    font-size: 1em;
+  }
+
+  logo {
+    display: block;
+    position: relative;
+  }
+
+  .logo-image {
+    height: 75px;
+    width: 100px;
+  }
+
+  .logo-image:hover {
+    transition: 1s ease;
+    transform: scale(1.1);
+  }
+
+}

@@ -258,6 +258,8 @@ section .box:hover {
   }
 
   header .top .button .btn {
+    margin: 10px 50px;
+    display: block;
     font-size: 1.2em;
   }
 

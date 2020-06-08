@@ -246,3 +246,30 @@ nav ul li a:hover {
 .tapas-item {
   padding: 20px;
 }
+
+@media screen and (max-width: 1000px) {
+
+  nav {
+    padding: 20px;
+  }
+
+  nav h7 {
+    font-size: 3em;
+  }
+
+  nav ul li a {
+    padding: 0 10px;
+    font-size: 1em;
+  }
+
+  .tapas {
+    grid-template-columns: 1fr 1fr;
+  }
+
+}
+
+@media screen and (max-width: 700px) {
+  .tapas {
+    grid-template-columns: 1fr;
+  }
+}
